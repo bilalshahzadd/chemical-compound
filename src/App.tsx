@@ -37,13 +37,15 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={input} onChange={handleChange} />
-        <button type="submit">Convert</button>
-      </form>
-      <div>{output}</div>
-    </div>
+    <>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <input type="text" value={input} onChange={handleChange} />
+          <button type="submit">Convert</button>
+        </form>
+        <div>{output}</div>
+      </div>
+    </>
   );
 };
 
